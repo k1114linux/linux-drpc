@@ -1,6 +1,6 @@
 CC = gcc
-CFLAGS = -Wall -Wextra # -I./discord-rpc/include
-LDFLAGS = -ldiscord-rpc# -L./discord-rpc/lib
+CFLAGS = -std=c++17 -Wall -Wextra		  # -I./discord-rpc/include
+LDFLAGS = -lstdc++ -ldiscord-rpc# -L./discord-rpc/lib
 
 TARGET = ldrpc
 SRC = ldrpc.c

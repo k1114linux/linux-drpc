@@ -69,7 +69,7 @@ int _drp_constructor(int argc, char* argv_ptr[], DiscordRichPresence* dr_presenc
             { "--party-max",        "Party max size",           _ldrpc_ae_int,          &dr_presence_ptr->partyMax },
         };
 
-        if(strcmp(argv_ptr[i], "--help") == 0 || strcmp(argv_ptr[i], "-h")) {
+        if(strcmp(argv_ptr[i], "--help") == 0 || strcmp(argv_ptr[i], "-h") == 0) {
             _ldrpc_print_help(argv_ptr[0], options, sizeof(options)/sizeof(options[0])); return(1);
         }
 
